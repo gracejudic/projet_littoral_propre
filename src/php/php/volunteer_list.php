@@ -73,22 +73,6 @@ error_reporting(E_ALL);
                     <th class="py-3 px-4 text-left">Actions</th>
                 </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-300">
-                <tr class="hover:bg-gray-100 transition duration-200">
-                    <td class="py-3 px-4">Nom du bénévole</td>
-                    <td class="py-3 px-4">email@example.com</td>
-                    <td class="py-3 px-4">Admin</td>
-                    <td class="py-3 px-4 flex space-x-2">
-                        <a href="#"
-                           class="bg-cyan-200 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
-                            ✏️ Modifier
-                        </a>
-                        <a href="#"
-                           class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200">
-                            🗑️ Supprimer
-                        </a>
-                    </td>
-                </tr>
                 <?php foreach ($benevoles as $benevole) : ?>
                     <tr class="hover:bg-gray-100 transition duration-200">
                         <td class="py-3 px-4"><?= htmlspecialchars($benevole['nom']) ?></td>
@@ -98,7 +82,7 @@ error_reporting(E_ALL);
                             <a href="volunteer_edit.php?id=<?= $benevole['id'] ?>" class="bg-cyan-200 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                                 ✏️ Modifier
                             </a>
-                            <a href="volunteer_edit.php?id=<?= $benevole['id'] ?>" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce benevole ?');">
+                            <a href="volunteer_delete.php?id=<?= $benevole['id'] ?>" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce benevole ?');">
                                 🗑️ Supprimer
                             </a>
                         </td>
