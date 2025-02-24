@@ -1,7 +1,7 @@
 # Projet collectif back-office "Littoral Propre"
 
 # Contexte
-Projet consistant à débugger et finaliser un back-office existant pour l'association "Littoral Propre", qui organise des collectes de déchets sur les plages. Reprise d'un code partiel pour le rendre fonctionnel.
+Projet de formation consistant à débugger et finaliser un back-office existant pour l'association "Littoral Propre", qui organise des collectes de déchets sur les plages. Reprise d'un code partiel pour le rendre fonctionnel.
 
 # Étapes du projet
 Analyse du code existant :
